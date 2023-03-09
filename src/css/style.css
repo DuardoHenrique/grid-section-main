@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;500;600&display=swap');
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: var(--light-grayish-blue);
+}
+
+.main {
+    display: grid;
+    grid:
+    "post-1  post-1 post-2 post-3"
+    "post-4 post-5 post-5 post-3";
+    place-content: center;
+    grid-gap: 16px;
+    width: 100%;
+    height: 100vh;
+}
+
+.main .post {
+    border-radius: 8px;
+    padding: 25px;
+}
+
+
+.main .post .profile {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.main .post .profile .image {
+    margin-right: 17px;
+}
+
+.main .post .profile .image img {
+    border-radius: 50%;
+    width: 35px;
+}
+
+.main .post .profile .user-information {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .post .profile .user-information .name {
+    font-weight: 600;
+}
+
+.main .post .profile .user-information .verified {
+    opacity: 50%;
+}
+
+.main .post .post-title {
+    margin-bottom: 13px;
+}
+
+.main .post .post-content p {
+    opacity: 70%;
+}
+
+
+/* post-1 */
+.main .post.post-1 {
+    grid-area: post-1;
+    background-color: var(--moderate-violet);
+    color: var(--white);
+}
+
+.main .post.post-1 .post-title,
+.main .post.post-1 .post-content{
+    max-width: 470px;
+}
+
+
+/* post-2 */
+.main .post.post-2 {
+    grid-area: post-2;
+    background-color: var(--very-dark-grayish-blue);
+    color: var(--white);
+    width: 260px;
+}
+
+
+/* post-3 */
+.main .post.post-3 {
+    grid-area: post-3;
+    background-color: var(--light-gray);
+    width: 240px;
+}
+
+
+/* post-4 */
+.main .post-4 {
+    grid-area: post-4;
+    background-color: var(--light-gray);
+    width: 300px;
+}
+
+
+/* post-5 */
+.main .post-5 {
+    grid-area: post-5;
+    background-color: var(--very-dark-blackish-blue);
+    color: var(--white);
+    width: 510px;
+}
+
+
